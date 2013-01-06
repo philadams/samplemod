@@ -1,23 +1,19 @@
-# -*- coding: utf-8 -*-
-
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 
-with open('README.md') as f:
+with open('README.txt') as f:
     readme = f.read()
-
-with open('LICENSE') as f:
-    license = f.read()
 
 setup(
     name='sample',
     version='0.0.1',
-    description='Sample package for Python-Guide.org',
-    long_description=readme,
     author='Phil Adams',
     author_email='phil@philadams.net',
     url='https://github.com/philadams/samplemod',
-    license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    license='LICENSE.txt',
+    description='TODO some new package short info',
+    long_description=readme,
+    packages=['sample'],
+    scripts=['bin/samplescript'],
 )
 
