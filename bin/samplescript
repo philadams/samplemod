@@ -1,0 +1,12 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+try:
+    import sample
+except ImportError:
+    import sys
+    import os
+    sys.path.insert(0, os.path.abspath('..'))
+    import sample
+
+print('sample: %s' % sample.get_hmm())
